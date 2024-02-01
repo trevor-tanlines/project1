@@ -267,7 +267,7 @@ body {
   align-items: center;
   padding-right: 50px;
   font-size: medium;
-  margin-left: 150px;
+  margin-left: 130px;
 }
 
 .topmenu {
@@ -275,7 +275,8 @@ body {
   float: left;
   align-items: center;
   padding-top: 20px ;
-  padding-left: 75px;
+  padding-left: 10px;
+  padding-right: 50px;
 }
 
 .topmenu1 {
@@ -344,7 +345,7 @@ body {
   width: 100%;
 }
 
-.bodyheader {
+.mainheader {
   text-align: center;
   letter-spacing: 2px;
   padding: 50px;
@@ -357,13 +358,19 @@ body {
   padding-top: 25px;
 }
 
-.thingswedo {
+.bodyheader {
   text-align: center;
-  font-size: larger;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.bodysubheader {
+  text-align: center;
+  font-size: 15px;
   letter-spacing: 2px;
 }
 
-.iconplaceholder {
+.icon {
   width: 84px;
   height: 84px;
   background-color: red;
@@ -383,3 +390,85 @@ body {
   text-align: center;
   justify-content: space-between;
 }
+
+.whatsupcards {
+  flex-direction: column;
+  columns: 3;
+  padding-top: 25px;
+}
+
+.cardimage {
+  height: 225px;
+  width: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.cardtext {
+  width: 310px;
+  height: 40px;
+  position: absolute;
+  transform: translate(-0%, -32%); 
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 15px; 
+  text-align: left;
+  background-color: rgb(45, 192, 255);
+}
+
+.cardsubtext {
+  width: 310px;
+  height: 25px;
+  position: absolute;
+  transform: translate(-0%, 20%); 
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 10px; 
+  text-align: left;
+  display: flex;
+}
+
+.cameraicon {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(42, 159, 210);
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  margin-left: 290px;
+  color: white;
+}
+
+.scrollbar {
+  background-color: #c6c6c6;
+  height: 2px;
+  width: 1173px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.scrollbarhighlight {
+  background-color: rgb(42, 159, 210);
+  height: 4px;
+  width: 350px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.cardimage2 {
+  height: 225px;
+  width: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.latestprojectcards {
+  flex-direction: column;
+  columns: 3;
+  padding-top: 25px;
+}
+
