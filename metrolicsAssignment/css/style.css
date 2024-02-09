@@ -245,7 +245,7 @@ textarea {
   }
 }
 
-/* break */
+/* break, all code below has been written ourselves */
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -270,6 +270,11 @@ body {
   margin-left: 130px;
 }
 
+.metrolicsSquaresLogo {
+  height: auto;
+  width: 30px;
+}
+
 .topmenu {
   display: flex;
   float: left;
@@ -277,6 +282,8 @@ body {
   padding-top: 20px ;
   padding-left: 10px;
   padding-right: 50px;
+  flex-shrink: 100;
+  margin-bottom: -15px;
 }
 
 .topmenu1 {
@@ -411,14 +418,42 @@ body {
   letter-spacing: 2px;
 }
 
-.icon {
+.icon1 {
   width: 84px;
   height: 84px;
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
   align-self: center;
+  border: 3px solid rgb(255, 208, 0);
+}
+
+.icon2 {
+  width: 84px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border: 3px solid mediumaquamarine;
+}
+.icon3 {
+  width: 84px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border: 3px solid rgb(232, 88, 88);
+}
+.icon4 {
+  width: 84px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border: 3px solid rgb(42, 159, 210);
 }
 
 .thingswedocard {
@@ -448,9 +483,9 @@ body {
 
 .cardtext {
   width: 310px;
-  height: 40px;
+  height: 50px;
   position: absolute;
-  transform: translate(-0%, -32%); 
+  transform: translate(-0%, -40%); 
   color: #fff; 
   padding: 10px 20px; 
   font-size: 15px; 
@@ -462,7 +497,7 @@ body {
   width: 310px;
   height: 25px;
   position: absolute;
-  transform: translate(-0%, 20%); 
+  transform: translate(-0%, 5%); 
   color: #fff; 
   padding: 10px 20px; 
   font-size: 10px; 
@@ -471,12 +506,12 @@ body {
 }
 
 .cameraicon {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 49.5px;
   background-color: rgb(42, 159, 210);
   position: relative;
-  margin-top: 10px;
   margin-bottom: 10px;
+  transform: translate(21%, 0%);
   display: flex;
   justify-content: center;
   margin-left: 290px;
@@ -513,3 +548,260 @@ body {
   padding-top: 25px;
 }
 
+.thingsofabovecontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 100%px;
+  width: 98%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.sponsorcards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  rows: 5;
+  gap: 10px;
+  padding-top: 25px;
+  width: 98%;
+  margin-bottom: 75px;
+}
+
+.sponsorimage {
+  height: 150px;
+  width: 200px;
+}
+
+.footer {
+  background-color: rgb(22, 36, 47);
+  color: white;
+  position: absolute;
+  left: 0;
+  padding: 50px;
+}
+
+.peeweeimage {
+  height: 80px;
+  width: 70px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+.peeweehead {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.peeweebody {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+.scrollbarfooter {
+  background-color: #c6c6c6;
+  height: 1px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.scrollbarhighlightfooter {
+  background-color: rgb(42, 159, 210);
+  height: 1px;
+  width: 150px;
+  margin-top: 50px;
+  position: relative;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+}
+
+.columnOne {
+  width: 25%;
+float: left;
+}
+
+.columnTwo {
+  width: 25%;
+  float: left;
+}
+
+.columnThree {
+  width: 25%;
+float: left;}
+
+.columnFour {
+  width: 25%;
+float: left;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.underlinefooter1 {
+  background-color: mediumaquamarine;
+  height: 1.5px;
+  width: 300px;
+  margin-top: 10px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.triangle1 {
+  width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid mediumaquamarine;
+  position: relative;
+  left: 30px;
+}
+
+.underlinefooter2 {
+  background-color: rgb(255, 208, 0);
+  height: 1.5px;
+  width: 300px;
+  margin-top: 10px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.triangle2 {
+  width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid rgb(255, 208, 0);
+  position: relative;
+  left: 30px;
+}
+
+.underlinefooter3 {
+  background-color: rgb(232, 88, 88);
+  height: 1.5px;
+  width: 300px;
+  margin-top: 10px;
+  position: relative; 
+  margin-bottom: 30px;
+}
+.triangle3 {
+  width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid rgb(232, 88, 88);
+  position: relative;
+  left: 30px;
+}
+
+.underlinefooter4 {
+  background-color: rgb(84, 115, 251);
+  height: 1.5px;
+  width: 300px;
+  margin-top: 10px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.triangle4 {
+  width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid rgb(84, 115, 251);
+  position: relative;
+  left: 30px;
+}
+
+.socialicons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  height: auto;
+  width: 250px;
+}
+
+.flickrminions {
+  height: auto;
+  width: 300px;
+}
+
+.twitterIconMinion1 {
+  height: auto;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 75px;
+  position: absolute;
+}
+
+.twitterIconMinion2 {
+  height: auto;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 75px;
+  margin-top: 100px;
+  position: absolute;
+}
+
+.tweets {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 10px;
+  text-wrap: wrap;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  margin-left: 10px;
+
+}
+
+.img-size img {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 208, 0);
+  display: flex;
+}
+
+.enteryouremail {
+  background-color: rgb(232, 88, 88) ;
+  height: 50px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  flex-direction: column;
+  padding: 10px;
+}
