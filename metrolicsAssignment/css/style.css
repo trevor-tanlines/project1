@@ -549,19 +549,26 @@ body {
 }
 
 .thingsofabovecontent {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   height: 100%px;
   width: 98%;
   margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 50px; */
+width: 50%;
+}
+
+.things-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
 }
 
 .sponsorcards {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   rows: 5;
@@ -656,6 +663,12 @@ float: left;
   content: "";
   display: table;
   clear: both;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; 
 }
 
 .underlinefooter1 {
@@ -806,7 +819,7 @@ button {
   padding: 10px;
 }
 
-@media only screen and (min-width: 820px) {
+@media only screen and (max-width: 1024px) {
   .thingswedocard {
     width: 100%;
     height: auto;
@@ -828,8 +841,8 @@ button {
     width: 100%;
     justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     columns: 2;
     padding-top: 25px;
   }
@@ -838,21 +851,87 @@ button {
     width: 100%;
     justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     columns: 2;
     padding-top: 25px;
     padding-bottom: 20px;
   }
 
   .thingsofabovecontent {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     height: 100%px;
     width: 100%;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 50px; */
+    
   }
+
+  .things-container {
+    flex-direction: column;
+  }
+
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 430px) {
+
+.topmenu {
+  display: none;
+}
+
+.slideshow {
+  display: none;
+}
+
+main {
+  width: 100vw;
+}
+
+.thingswedocards {
+  columns: 1;
+}
+
+.whatsupcards {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  columns: 1;
+  padding-top: 25px;
+}
+
+.latestprojectcards {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* display: flex;
+  flex-direction: column; */
+  columns: 1;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.thingsofabove {
+  display: none;
+}
+
+.columnOne p, h2, .underlinefooter1 {
+  display: none;
+}
+.columnTwo {
+  display: none;
+}
+.columnFour {
+  display: none;
+}
+.row {
+  grid-template-columns: repeat(1, 1fr);
+}
 }
